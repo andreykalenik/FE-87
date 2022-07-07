@@ -69,6 +69,15 @@ a:visited{
     height: 647px;
 
 }
+.top img{
+    position: absolute;
+    left: 0;
+    top: -101px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -3;
+}
 .top__container {
     display: flex;
     flex-direction: column;
@@ -126,14 +135,6 @@ a:visited{
     background: #FF4343;
     box-shadow: 4px 4px 30px #FF4343;
 }
-.top__background {
-    margin: auto;
-    width: 100%;
-    position: absolute;
-    top: -100px;
-    z-index: -1;
-
-}
 .center {
 }
 .center__container {
@@ -189,4 +190,73 @@ a:visited{
 
     color: #6C7279;
     overflow: auto;
+}
+.workswall {
+    /* display: flex;
+    margin: 0 auto;
+    max-width: 1560px;
+    padding: 20px; */
+}
+.workswall__container {
+    display: flex;
+    flex-flow: row no wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 1520px;
+    background-color: red;
+
+}
+.brick {
+    flex: 1 1 380px;
+    font-family: 'Raleway';
+    font-style: normal;
+    position: relative;
+    border: 2px solid #FFFFFF;
+    color: color: transparent;
+    height: 342px;
+    width: 380px;
+}
+.brick img{
+    /* position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+} */
+.brick__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity:0;
+
+}
+.brick__title {
+    height: 60px; 
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+.brick__subtitle {
+    height: 21px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.brick:hover{
+    background: rgba(255, 67, 67, 0.8);
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+.brick:hover .brick__text{
+    opacity: 1;
+}
+.brick:active{
+    background: rgba(185, 12, 12, 0.8);
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+
 }
